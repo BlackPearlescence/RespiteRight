@@ -1,0 +1,71 @@
+$peach : peachpuff;
+$skyblue: skyblue;
+$goodtextshadow: 3px 3px 2px;
+$mainfontset: system-ui,"-apple-system","Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+body, html {
+    // border: 0;
+    // height: 100%;
+    // width: 100%;
+    // padding: 0;
+    margin: 0;
+}
+
+#top-nav{
+    display: flex;
+}
+
+#navbar-logo{
+    width: 60px
+}
+
+a#site-title-link ~ a{
+    position: relative;
+    top: 10px;
+}
+.top-links{
+    font-family: $mainfontset;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: gray;
+    
+}
+#site-title-link{
+    font-family: $mainfontset;
+    font-size:30px;
+    
+}
+
+#top-banner{
+    background-image: url(../images/truebluesky.webp);
+    font-family: $mainfontset;
+    background-size: cover;
+    padding: 100px;
+}
+
+
+
+#main-logo{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    
+}
+
+#opener{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 800px;
+    color: white;
+}
+#main-title{
+    text-align: center;
+    text-shadow: $goodtextshadow;
+    color: white;
+    font-size:100px;
+}
+
+//  <a title="liberty statue image - statue of liberty PNG image with transparent background@toppng.com" href="https://toppng.com/free-image/liberty-statue-image-statue-of-liberty-PNG-free-PNG-Images_224146" target="_blank">liberty statue image - statue of liberty PNG image with transparent background<img src="https://toppng.com/uploads/preview/liberty-statue-image-statue-of-liberty-11563233349hazg7flfku.png" alt="liberty statue image - statue of liberty PNG image with transparent background@toppng.com"></a>

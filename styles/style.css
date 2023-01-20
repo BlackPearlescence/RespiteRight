@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+}
+
+#top-nav {
+  display: flex;
+}
+
+#navbar-logo {
+  width: 60px;
+}
+
+a#site-title-link ~ a {
+  position: relative;
+  top: 10px;
+}
+
+.top-links {
+  font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+#site-title-link {
+  font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 30px;
+}
+
+#top-banner {
+  background-image: url(../images/truebluesky.webp);
+  font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-size: cover;
+  padding: 100px;
+}
+
+#main-logo {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+#opener {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  max-width: 800px;
+  color: white;
+}
+
+#main-title {
+  text-align: center;
+  text-shadow: 3px 3px 2px;
+  color: white;
+  font-size: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
