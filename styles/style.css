@@ -1,60 +1,152 @@
 body, html {
   margin: 0;
+  font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-#top-nav {
+body #top-nav, html #top-nav {
   display: flex;
 }
-
-#navbar-logo {
-  width: 60px;
-}
-
-a#site-title-link ~ a {
+body #top-nav a#site-title-link ~ a, html #top-nav a#site-title-link ~ a {
   position: relative;
   top: 10px;
 }
-
-.top-links {
+body #top-nav #site-title-link, html #top-nav #site-title-link {
+  font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 30px;
+}
+body #top-nav #navbar-logo, html #top-nav #navbar-logo {
+  width: 60px;
+}
+body #top-nav .top-links, html #top-nav .top-links {
   font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 20px;
   margin: 10px;
   text-decoration: none;
   color: gray;
 }
-
-#site-title-link {
-  font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 30px;
+body #top-nav .top-links:hover, html #top-nav .top-links:hover {
+  filter: brightness(0.5);
 }
-
-#top-banner {
+body #top-banner, html #top-banner {
   background-image: url(../images/truebluesky.webp);
   font-family: system-ui, "-apple-system", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-size: cover;
   padding: 100px;
 }
-
-#main-logo {
+body #top-banner #main-logo, html #top-banner #main-logo {
   margin: 0 auto;
   display: block;
   width: 100px;
   height: 100px;
 }
-
-#opener {
+body #top-banner #opener, html #top-banner #opener {
   text-align: center;
   margin: 0 auto;
   display: block;
   max-width: 800px;
   color: white;
 }
-
-#main-title {
+body #top-banner #main-title, html #top-banner #main-title {
   text-align: center;
   text-shadow: 3px 3px 2px;
   color: white;
   font-size: 100px;
+}
+body div#plan-vacation-info, html div#plan-vacation-info {
+  background: url(../images/stlouis.webp);
+  background-size: cover;
+  color: white;
+  font-size: 25px;
+  padding: 100px;
+}
+body div#plan-vacation-info h2#plan-vacation-info-title, html div#plan-vacation-info h2#plan-vacation-info-title {
+  text-align: center;
+}
+body #plan-vacation-info > p, html #plan-vacation-info > p {
+  font-size: 40px;
+  text-align: left;
+  max-width: 900px;
+  display: block;
+  margin: 80px auto;
+}
+body #liberty-icon, html #liberty-icon {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+#learn-more {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #969393;
+  border-radius: 8px;
+  background: #0048ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0048ff), to(#0043ed));
+  background: -moz-linear-gradient(top, #0048ff, #0043ed);
+  background: linear-gradient(to bottom, #0048ff, #0043ed);
+  font: normal normal bold 20px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#learn-more:hover,
+#learn-more:focus {
+  border: 1px solid #d6d2d2;
+  background: #0056ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0056ff), to(#0050ff));
+  background: -moz-linear-gradient(top, #0056ff, #0050ff);
+  background: linear-gradient(to bottom, #0056ff, #0050ff);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#learn-more:active {
+  background: #002b99;
+  background: -webkit-gradient(linear, left top, left bottom, from(#002b99), to(#0043ed));
+  background: -moz-linear-gradient(top, #002b99, #0043ed);
+  background: linear-gradient(to bottom, #002b99, #0043ed);
+}
+
+#surprise-me {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #969393;
+  border-radius: 8px;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  font: normal normal bold 20px arial;
+  color: #000000;
+  text-decoration: none;
+}
+
+#surprise-me:hover,
+#surprise-me:focus {
+  border: 1px solid #d6d2d2;
+  color: #000000;
+  text-decoration: none;
+}
+
+#surprise-me:active {
+  background: #999999;
+  background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#ffffff));
+  background: -moz-linear-gradient(top, #999999, #ffffff);
+  background: linear-gradient(to bottom, #999999, #ffffff);
+}
+
+#top-buttons {
+  display: block;
+  line-height: 100px;
+  text-align: center;
+}
+
+#learn-more {
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

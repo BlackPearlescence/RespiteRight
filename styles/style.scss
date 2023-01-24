@@ -9,63 +9,171 @@ body, html {
     // width: 100%;
     // padding: 0;
     margin: 0;
-}
-
-#top-nav{
-    display: flex;
-}
-
-#navbar-logo{
-    width: 60px
-}
-
-a#site-title-link ~ a{
-    position: relative;
-    top: 10px;
-}
-.top-links{
     font-family: $mainfontset;
-    font-size: 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: gray;
+
+    #top-nav{
+        display: flex;
+
+        a#site-title-link ~ a{
+            position: relative;
+            top: 10px;
+        }
+
+        #site-title-link{
+            font-family: $mainfontset;
+            font-size:30px;
+            
+        }
+        
+        
+
+        #navbar-logo{
+            width: 60px
+        }
+
+        .top-links{
+            font-family: $mainfontset;
+            font-size: 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: gray;
+            
+        }
+
+        .top-links:hover{
+            filter:brightness(0.5);
+        }
+        
+    }
+
+    #top-banner{
+        background-image: url(../images/truebluesky.webp);
+        font-family: $mainfontset;
+        background-size: cover;
+        padding: 100px;
+
+        #main-logo{
+            margin: 0 auto;
+            display: block;
+            width: 100px;
+            height: 100px;
+            
+        }
+
+        #opener{
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            max-width: 800px;
+            color: white;
+        }
+
+        #main-title{
+            text-align: center;
+            text-shadow: $goodtextshadow;
+            color: white;
+            font-size:100px;
+        }
+    }
+
+    div#plan-vacation-info{
+        background: url(../images/stlouis.webp);
+        background-size: cover;
+        color: white;
+        font-size:25px;
+        padding: 100px;
+        h2#plan-vacation-info-title{
+            text-align: center;
+        }
+    }
+
+    #plan-vacation-info > p{
+        font-size: 40px;
+        text-align: left;
+        max-width: 900px;
+        display: block;
+        margin: 80px auto;
+    }
     
-}
-#site-title-link{
-    font-family: $mainfontset;
-    font-size:30px;
-    
-}
-
-#top-banner{
-    background-image: url(../images/truebluesky.webp);
-    font-family: $mainfontset;
-    background-size: cover;
-    padding: 100px;
-}
-
-
-
-#main-logo{
-    margin: 0 auto;
-    display: block;
-    width: 100px;
-    height: 100px;
-    
-}
-
-#opener{
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    max-width: 800px;
-    color: white;
-}
-#main-title{
-    text-align: center;
-    text-shadow: $goodtextshadow;
-    color: white;
-    font-size:100px;
+    #liberty-icon{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 //  <a title="liberty statue image - statue of liberty PNG image with transparent background@toppng.com" href="https://toppng.com/free-image/liberty-statue-image-statue-of-liberty-PNG-free-PNG-Images_224146" target="_blank">liberty statue image - statue of liberty PNG image with transparent background<img src="https://toppng.com/uploads/preview/liberty-statue-image-statue-of-liberty-11563233349hazg7flfku.png" alt="liberty statue image - statue of liberty PNG image with transparent background@toppng.com"></a>
+
+// Learn More
+#learn-more {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #969393;
+    border-radius: 8px;
+    background: #0048ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0048ff), to(#0043ed));
+    background: -moz-linear-gradient(top, #0048ff, #0043ed);
+    background: linear-gradient(to bottom, #0048ff, #0043ed);
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+#learn-more:hover,
+#learn-more:focus {
+    border: 1px solid #d6d2d2;
+    background: #0056ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0056ff), to(#0050ff));
+    background: -moz-linear-gradient(top, #0056ff, #0050ff);
+    background: linear-gradient(to bottom, #0056ff, #0050ff);
+    color: #ffffff;
+    text-decoration: none;
+}
+#learn-more:active {
+    background: #002b99;
+    background: -webkit-gradient(linear, left top, left bottom, from(#002b99), to(#0043ed));
+    background: -moz-linear-gradient(top, #002b99, #0043ed);
+    background: linear-gradient(to bottom, #002b99, #0043ed);
+}
+
+// Surprise Me
+
+#surprise-me {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #969393;
+    border-radius: 8px;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    font: normal normal bold 20px arial;
+    color: #000000;
+    text-decoration: none;
+}
+#surprise-me:hover,
+#surprise-me:focus {
+    border: 1px solid #d6d2d2;
+    color: #000000;
+    text-decoration: none;
+}
+#surprise-me:active {
+    background: #999999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#ffffff));
+    background: -moz-linear-gradient(top, #999999, #ffffff);
+    background: linear-gradient(to bottom, #999999, #ffffff);
+}
+
+#top-buttons{
+    display: block;
+    line-height: 100px;
+    text-align: center;
+}
+
+#learn-more{
+    margin-right: 50px;
+}
